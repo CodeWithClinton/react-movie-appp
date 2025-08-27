@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Movie Finder Design System - Cinematic Dark Theme
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark cinematic base colors */
+    --background: 220 26% 7%;
+    --foreground: 210 40% 95%;
+
+    /* Card styling with subtle dark tones */
+    --card: 220 20% 12%;
+    --card-foreground: 210 40% 95%;
+    --card-hover: 220 20% 16%;
+
+    /* Popover styling */
+    --popover: 220 20% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Primary golden accent */
+    --primary: 45 93% 47%;
+    --primary-foreground: 220 26% 7%;
+    --primary-glow: 45 93% 65%;
+
+    /* Secondary deep blue */
+    --secondary: 225 20% 25%;
+    --secondary-foreground: 210 40% 95%;
+
+    /* Muted elements */
+    --muted: 220 20% 18%;
+    --muted-foreground: 215 16% 65%;
+
+    /* Accent purple */
+    --accent: 260 50% 35%;
+    --accent-foreground: 210 40% 95%;
+
+    /* Error states */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Borders and inputs */
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --input-focus: 220 20% 25%;
+    --ring: 45 93% 47%;
+
+    /* Gradients */
+    --gradient-background: linear-gradient(135deg, hsl(220 26% 7%) 0%, hsl(225 20% 12%) 50%, hsl(220 26% 7%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(220 20% 12%) 0%, hsl(220 20% 16%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(45 93% 47%) 0%, hsl(45 93% 65%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(260 50% 35%) 0%, hsl(280 50% 45%) 100%);
+
+    /* Shadows and glows */
+    --shadow-card: 0 8px 32px hsl(220 26% 4% / 0.4);
+    --shadow-card-hover: 0 16px 48px hsl(220 26% 4% / 0.6);
+    --glow-primary: 0 0 24px hsl(45 93% 47% / 0.3);
+    --glow-card: 0 0 16px hsl(45 93% 47% / 0.1);
+
+    /* Animation timings */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
